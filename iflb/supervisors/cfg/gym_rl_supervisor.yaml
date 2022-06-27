@@ -1,0 +1,2 @@
+# whether or not to prefetch all supervisor actions with one NN forward pass
+prefetch: True

@@ -1,0 +1,44 @@
+# learning rate
+lr: 0.0003
+# minibatch size
+batch_size: 256
+# model updates per sim step. if -1, set equal to num humans
+updates_per_step: 1
+# if True, don't use human transitions in safety critic data
+mask_human: False
+# number of NNs in ensemble
+num_policies: 5
+# safety critic gradient steps
+critic_safe_pretraining_steps: 3000
+# offline demo gradient steps
+policy_pretraining_steps: 1000
+# value target updates per safety critic update
+target_update_interval: 1
+# safety critic discount factor
+gamma_safe: 0.5
+# non-safety critic discount factor
+gamma: 0.999
+# target smoothing coefficient for risk critic
+tau_safe: 0.0002
+# NN hidden layer size
+hidden_size: 256
+# replay buffer size
+replay_size: 1000000
+# if >=0, the fraction of positive examples in [0,1] to sample for critic training
+pos_fraction: -1.
+# pretrain safety critic on offline data
+pretrain_qrisk: True
+# pretrain policy on offline demos
+task_demos: True
+# max number of offline constraint violation transitions
+num_unsafe_transitions: 1000
+# max number of offline demo transitions
+num_task_transitions: 250
+# only train safety critic on offline data
+disable_online_updates: False
+# use goal_critic for TD; default use is False
+goal_critic: False
+# use safety critic; default use is True
+safety_critic: True
+# behavior cloning: more data, no online updates
+bc: False

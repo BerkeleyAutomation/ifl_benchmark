@@ -1,0 +1,8 @@
+# weighting used in linear combination
+alpha_weight: 0.5
+# if True, allow some humans to help no robots if they're all OK
+free_humans: True
+# threshold for freeing humans
+combined_alpha_thresh: 0.15
+# epsilon to normalize the denominator
+eps: 0.0001

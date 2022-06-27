@@ -1,0 +1,17 @@
+--cuda
+--env_name=Anymal
+--logdir=logs
+--logdir_suffix=demos
+--num_envs=1
+--num_humans=1
+--num_steps=5005
+--no_free_humans
+--min_int_time=5
+--expert=GymRL
+--order=CU
+--uncertainty_thresh=0.0
+--updates_per_step=0
+--no_task_demos
+--no_pretrain_qrisk
+--log_freq=1000
+--vec_env

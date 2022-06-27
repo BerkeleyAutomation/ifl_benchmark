@@ -1,0 +1,2 @@
+# whether or not to prefetch all supervisor actions at once
+prefetch: False

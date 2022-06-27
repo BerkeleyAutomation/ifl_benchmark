@@ -1,0 +1,13 @@
+# which order to prioritize. A permutation or subset of "CUR", e.g. RCU, CU, R, etc.
+order: "CUR"
+# constraint violation limit as a fraction of num humans, after which do not prioritize constraint violating robots
+cv_thresh: 1.
+# risk threshold under which is treated as 0 risk
+risk_thresh: 0.5
+# policy ensemble variance threshold under which is treated as 0 uncertainty,
+# as a fraction of the maximum possible variance (default: 0.025)
+uncertainty_thresh: 0.2
+# if True, allow some humans to help no robots if they're all OK
+free_humans: True
+# optionally, *penalize* constraint violations for warmup_penalty timesteps
+warmup_penalty: 0

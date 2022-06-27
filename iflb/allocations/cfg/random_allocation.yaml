@@ -1,0 +1,6 @@
+# if True, allow some humans to help no robots if they're all OK
+free_humans: True
+# if free_humans, randomly free humans at a rate that hits this human action budget in expectation
+action_budget: 30000
+# std dev of busy humans wrt max num humans
+std_dev: 0.1

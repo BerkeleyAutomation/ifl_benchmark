@@ -1,0 +1,11 @@
+*.pyc
+*.png
+*.pkl
+*.p
+*.jpg
+*.zip
+*.gif
+*.env
+media/
+__pycache__/
+.DS_Store
