@@ -1,6 +1,10 @@
 # Interactive Fleet Learning Benchmark
 ------------
 
+Benchmark code from the following paper: 
+
+R. Hoque, L.Y. Chen, S. Sharma, K. Dharmarajan, B. Thananjeyan, P. Abbeel, K. Goldberg. Fleet-DAgger: Interactive Robot Fleet Learning with Scalable Human Supervision. arXiv preprint https://arxiv.org/abs/2206.14349, 2022.
+
 ## Installation and Setup
 ------------
 First install Python dependencies in a virtual environment by running `. install.sh`.
