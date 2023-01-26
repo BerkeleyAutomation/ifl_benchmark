@@ -84,7 +84,7 @@ class BC(object):
         self.policy = torch.load(osp.join(logdir, "policy.ckpt"))
         # for policy in self.policy:
         #     policy.eval()
-        self.safety_critic.safety_critic.load_state_dict(osp.join(logdir, "safety_critic.ckpt"))
+        self.safety_critic.safety_critic.load_state_dict(torch.load(osp.join(logdir, "safety_critic.ckpt")))
         # self.safety_critic.safety_critic.eval()
 
     def get_actions(self, states, tensor=False):
